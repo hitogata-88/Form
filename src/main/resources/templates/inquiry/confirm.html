@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${title}">Insert title here</title>
+</head>
+<body>
+<form method="post" action="#" th:action="@{/inquiry/save}" th:object="${inquiryForm}">
+  <input type="text" name="name" th:value="*{name}">
+  <input type="text" name="email" th:value="*{email}">
+  <input type="text" name="contents" th:value="*{contents}">
+  <input type="submit" value="送信">
+</form>
+</body>
+</html>

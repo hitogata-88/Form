@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${title}">Insert title here</title>
+</head>
+<body>
+
+	<form method="post" action="/inquiry/confirm">
+		<div>
+			<label for="name">お名前</label><span class="tag">必須</span><br /> <input
+				type="text" id="name" name="name">
+		</div>
+		<div>
+			<label for="email">メールアドレス</label><span class="tag">必須</span><br />
+			<input type="text" id="email" name="email">
+		</div>
+		<div>
+			<label for="contents">お問い合わせ内容</label><span class="tag">必須</span><br />
+			<textarea id="contents" name="contents" cols="30" rows="10"></textarea>
+		</div>
+		<input type="submit" value="確認ページへ">
+	</form>
+</body>
+</html>
