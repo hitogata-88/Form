@@ -3,6 +3,7 @@ package com.example.demo.domain.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.demo.app.inquiry.InquiryForm;
 import com.example.demo.domain.dao.InquiryDao;
 import com.example.demo.domain.entity.Inquiry;
 
@@ -17,7 +18,7 @@ public class InquiryServiceImpl implements InquiryService {
   }
 
   @Override
-  public void save(Inquiry inquiry) {
-    dao.create(inquiry);
+  public void save(InquiryForm inquiryForm ,Inquiry inquiry) {
+    dao.create(inquiryForm,inquiry);
   }
 }

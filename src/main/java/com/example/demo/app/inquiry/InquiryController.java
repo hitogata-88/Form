@@ -37,7 +37,7 @@ public class InquiryController {
 			//TODO Exception
 		}
 		Inquiry inquiry = new Inquiry();
-		service.save(inquiry);
+		service.save(inquiryForm,inquiry);
 		return "inquiry/complete.html";
 	}
 
