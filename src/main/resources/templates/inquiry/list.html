@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Datatables bootstrap CDN</title>
+
+<link rel="stylesheet" type="text/css"
+	href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" />
+
+<link rel="stylesheet" type="text/css"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<script type="text/javascript"
+	src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript"
+	src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript"
+	src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+
+</head>
+<body>
+	<form method="post" action="/inquiry/confirm">
+		<table id="sample-table" class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>名前</th>
+					<th>メールアドレス</th>
+					<th>備考</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="text" id="name" name="name" value="a"></td>
+					<td>朝食後</td>
+					<td>お茶で飲むと危険</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>サプリメント</td>
+					<td>昼食後</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+
+<script type="text/javascript">
+$(function() {
+   $("#sample-table").DataTable();
+})
+</script>
+</html>
